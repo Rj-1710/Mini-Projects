@@ -1,0 +1,122 @@
+:root {
+    --bg: #f4f6f9;
+    --sidebar-bg: #1e293b;
+    --sidebar-text: #e2e8f0;
+    --accent: #2563eb;
+    --card-bg: #ffffff;
+    --border: #d1d5db;
+    --text: #111827;
+    --muted: #6b7280;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 1rem;
+}
+
+.sidebar .brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sidebar .nav a {
+    display: block;
+    padding: .6rem .8rem;
+    border-radius: 6px;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    margin-bottom: .4rem;
+}
+
+.sidebar .nav a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.sidebar .nav .active {
+    background: rgba(255,255,255,0.2);
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+
+.btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn.secondary {
+    background: #64748b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .6rem;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    text-align: left;
+    color: var(--muted);
+}
+
+form label {
+    display: block;
+    margin-top: .6rem;
+    margin-bottom: .2rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: .6rem;
+}

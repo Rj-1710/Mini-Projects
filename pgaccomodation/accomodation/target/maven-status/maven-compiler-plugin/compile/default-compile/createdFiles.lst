@@ -1,0 +1,13 @@
+com\example\accomodation\repository\OwnerRepository.class
+com\example\accomodation\controller\PgController.class
+com\example\accomodation\service\PgServiceInterface.class
+com\example\accomodation\repository\PgPlaceRepository.class
+com\example\accomodation\AccomodationApplication.class
+com\example\accomodation\model\PgPlace.class
+com\example\accomodation\service\OwnerService.class
+com\example\accomodation\service\PgService.class
+com\example\accomodation\controller\OwnerController.class
+com\example\accomodation\repository\TenantRepository.class
+com\example\accomodation\service\OwnerServiceInterface.class
+com\example\accomodation\model\Tenant.class
+com\example\accomodation\model\Owner.class
